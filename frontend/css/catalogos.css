@@ -1,0 +1,141 @@
+/*Carrusel top dies*/
+.catalogo-top{
+    margin: 70px;
+}
+
+/* Contenedor titulo y controles*/
+.top-titulo-controles{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.catalogo-top .top-titulo-controles .indicadores button{
+    background: white;
+    width: 10px;
+    height: 3px;
+    cursor: pointer;
+    border: none;
+    margin-right: 2px;
+}
+
+.catalogo-top .top-titulo-controles .indicadores button:hover,
+.catalogo-top .top-titulo-controles .indicadores button.activo{
+    background-color: red;
+
+}
+
+.catalogo-top .catalogo-principal{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.catalogo-top .catalogo-principal .flecha-izquierda,
+.catalogo-top .catalogo-principal .flecha-derecha{
+    position: absolute;
+    border: none;
+    background: rgb(255, 255, 255, 0.3);
+    font-size: 40px;
+    height: 50%;
+    top: calc(50% - 25%);
+    line-height: 40px;
+    width: 50px;
+    color: white;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+}
+
+.catalogo-top .catalogo-principal .flecha-izquierda:hover,
+.catalogo-top .catalogo-principal .flecha-derecha:hover{
+    background: rgb(255, 255, 255, 0.9);
+}
+
+.catalogo-top .catalogo-principal .flecha-izquierda{
+    left: 0;
+}
+
+.catalogo-top .catalogo-principal .flecha-derecha{
+    right: 0;
+}
+
+/* Carrusel */
+
+.catalogo-principal .peliculas{
+    width: 100%;
+    height: 200px;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+
+.catalogo-principal .peliculas .peliculas-top{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.catalogo-principal .peliculas .peliculas-top  {
+    min-width: 20%;
+    transition: .3 ease all;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+}
+
+.catalogo-principal .peliculas .peliculas-top.hover{
+    transform: scale(1.2);
+    vertical-align: center;
+}
+
+.catalogo-principal .peliculas .peliculas-top .top-numero img,
+.catalogo-principal .peliculas .peliculas-top .caratula-top img{
+    vertical-align: top;
+}
+
+.top-numero img {
+    object-fit: cover;
+    object-position: center;
+    width: 80px;
+}
+
+.caratula-top{
+    width: max-content;
+}
+.caratula-top img{
+    object-fit: contain;
+}
+
+/*Catalogos*/
+.catalogos{
+    padding-block: 2px;
+    background-color: black;
+    color: white;
+}
+.catalogo--peliculas{
+    width: 95%;
+    margin-inline: auto;
+}
+.catalogo--peliculas h1,
+.catalogo--peliculas h2{
+    padding: 10px;
+}
+
+.peliculas{
+    overflow-x: scroll;
+    display: flex;
+    gap: 12px;
+    height: 120px;
+}
+.peliculas::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+.pelicula{
+    min-width: 200px;
+    height: auto;
+}
+
+.pelicula:hover{
+    zoom: 2s;
+    background-color: aqua;
+}

@@ -1,0 +1,64 @@
+/* Footer*/
+
+.footer{
+    padding: 10%;
+    margin: auto;
+    background-color: black;
+}
+
+.footer-contenedor{
+    width: 95%;
+    margin-inline: auto;
+}
+
+.iconos{
+    display: flex;
+    gap: 20px;
+}
+
+.iconos li{
+    width: 30px;
+    height: 30px;
+}
+
+.informacion{
+    display: grid;
+    color: rgb(133, 133, 133);
+    gap: 20px;
+    margin-block: 20px;
+    font-size: 15px;
+}
+
+@media (min-width:400px){
+    .informacion{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:768px){
+    .informacion{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width:992px){
+    .informacion{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.informacion p:hover{
+    color: white;
+}
+
+.idioma{
+    color: white;
+    padding: 8px;
+    font-weight: 700;
+}
+.contruccion{
+    color: white;
+    padding: 10px;
+    font-weight: 900;
+    text-align: center;
+}

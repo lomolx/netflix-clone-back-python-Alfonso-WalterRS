@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Netflix</title>
+</head>
+<body>
+    
+    <header class="background-banner">
+        <video muted autoplay loop poster="assets/img/WhatsApp Image 2023-08-08 at 10.54.54 PM.jpeg">
+            <source src="assets/videos/baki.mp4" type="video/mp4">
+            <img src="assets/img/WhatsApp Image 2023-08-08 at 10.54.54 PM.jpeg" alt="Imagen background">
+        </video>
+        <div class="banner">
+            <div class="menu">
+                <nav>
+                    <menu class="navegacion navegacion-izquierda">
+                        <li class="logo"><a href=""><img src="assets/imgs/netflix.png" alt="Netflix"></a></li>
+                        <li><a href="">Explorar</a></li>
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="">Series</a></li>
+                        <li><a href="">Peliculas</a></li>
+                        <li><a href="">Novedades Populares</a></li>
+                        <li><a href="">Mi Lista</a></li>
+                        <li><a href="">Explorar por idiomas</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul class="navegacion navegacion-derecha">
+                        <li><a href=""><img class="invertir" src="assets/incons/lupa.png" alt="lupa"></a></li>
+                        <li><a href=""><img class="invertir" src="assets/incons/bell.png" alt="Campana"></a></li>
+                        <li class="usuario"><a href="#"><img src="assets/incons/perfil.png" alt="Usuario"></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="imago">
+                <div class="imagotipo-imagen">
+                    <img src="assets/imgs/baki.png" alt="Imagen logotipo">
+                </div>
+                <div class="imagotipo-info">
+                    <button>
+                        <span>▶ Reproducir</span>
+                    </button>
+                    <button>
+                        <span>ⓘ Mas informacion</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="catalogos">
+        <section class="catalogo-peliculas">
+            <h2>Populares en Netflix</h2>
+            <div class="peliculas slide-uno" id="populares">
+
+            </div>
+        </section>
+        <section class="catalogo-top">
+            <div class="top-titulo-controles">
+                <h2>Las 10 peliculas mas populares en Netflix</h2>
+                <div class="indicadores">
+                    
+                </div>
+            </div>
+            <div class="catalogo-principal">
+                <button id="flecha-izquierda" class="flecha-izquierda invertir" ><img src="assets/inconos/angle-left-solid.svg" alt=""></i></button>
+                <ul class="peliculas slide-dos" id="top">
+                    <li class="peliculas-top">
+                        <div class="top-numero"><img src="assets/imgs/1.png" alt="#"></div>
+                        <div class="caratula-top"><img src="assets/imgs/top-1.webp" alt="#"></div>
+                    </li>
+                    <li class="peliculas-top">
+                        <div class="top-numero"><img src="assets/imgs/2.png" alt="#"></div>
+                        <div class="caratula-top"><img src="assets/imgs/top-2.webp" alt="#"></div>
+                    </li>
+                    <li class="peliculas-top">
+                        <div class="top-numero"><img src="assets/imgs/3.png" alt="#"></div>
+                        <div class="caratula-top"><img src="assets/imgs/top-3.webp" alt="#"></div>
+                    </li>
+                    <li class="peliculas-top">
+                        <div class="top-numero"><img src="assets/imgs/4.png" alt="#"></div>
+                        <div class="caratula-top"><img src="assets/imgs/top-4.jpg" alt="#"></div>
+                    </li>
+                    <li class="peliculas-top">
+                        <div class="top-numero"><img src="assets/imgs/5.png" alt="#"></div>
+                        <div class="caratula-top"><img src="assets/imgs/top-5.webp" alt="#"></div>
+                    </li>
+                    <li class="peliculas-top">
+                        <div class="top-numero"><img src="assets/imgs/6.png" alt="#"></div>
+                        <div class="caratula-top"><img src="assets/imgs/top-6.jpg" alt="#"></div>
+                    </li>
+                    <li class="peliculas-top">
+                        <div class="top-numero"><img src="assets/imgs/7.png" alt="#"></div>
+                        <div class="caratula-top"><img src="assets/imgs/top-7.jpg" alt="#"></div>
+                    </li>
+                    <li class="peliculas-top">
+                        <div class="top-numero"><img src="assets/imgs/8.png" alt="#"></div>
+                        <div class="caratula-top"><img src="assets/imgs/top-8.webp" alt="#"></div>
+                    </li>
+                    <li class="peliculas-top">
+                        <div class="top-numero"><img src="assets/imgs/9.png" alt="#"></div>
+                        <div class="caratula-top"><img src="assets/img/top-9.jpg" alt="#"></div>
+                    </li>
+                    <li class="peliculas-top">
+                        <div class="top-numero"><img src="assets/imgs/10.png" alt="#"></div>
+                        <div class="caratula-top"><img src="assets/imgs/top-10.webp" alt="#"></div>
+                    </li>
+                    
+                </ul>
+                <button id="flecha-derecha" class="flecha-derecha invertir"><img src="assets/incons/angle-right-solid.svg" alt=""></button>
+            </div>
+            </div>
+        </section>
+        <section class="catalogo-peliculas">
+            <h2>Peliculas de Estreno</h2>
+            <div class="peliculas" id="estreno"></div>
+        </section>
+        <section class="catalogo-peliculas">
+            <h2>Tendencias</h2>
+            <div class="peliculas" id="vistas">
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-contenedor">
+            <ul class="iconos">
+                <li><a href=""><img src="assets/incons/facebook.svg" alt="Facebook"></a></li>
+                <li><a href=""><img src="assets/incons/instagram.svg" alt="Instagram"></a></li>
+                <li><a href=""><img src="assets/incons/github.svg" alt="Github"></a></li>
+                <li><a href=""><img src="assets/incons/github.svg" alt="Linkedin"></a></li>
+            </ul>
+        </div>
+        <div class="informacion">
+            <p>Audio Descriptivo</p>
+            <p>Relaciones con inversionistas</p>
+            <p>Avisos legales</p>
+            <p>Centro de ayuda</p>
+            <p>Empleo</p>
+            <p>Preferencias de cookies</p>
+            <p>Tarjetas de regalo</p>
+            <p>Términos de uso</p>
+            <p>informacion corporativa</p>
+            <p>Prensa</p>
+            <p>Privacidad</p>
+            <p>Contactenos</p>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>

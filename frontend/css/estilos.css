@@ -1,0 +1,51 @@
+@import url(encabezado.css);
+@import url(catalogos.css);
+@import url(footer.css);
+@font-face {
+    font-family: "netflixSans";
+    src: url(/assets/font/NetflixSans-Bold.woff2);
+    font-weight: bold;
+    font-style: bold;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "NetflixSans" ,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+video{
+    width: 100%;
+    height: 88vh;
+    object-fit: cover;
+    position: absolute;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.invertir {
+    filter: invert(1)
+}
+
+h2{
+    padding: 20px;
+}
