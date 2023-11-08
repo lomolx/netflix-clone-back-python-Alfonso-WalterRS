@@ -1,0 +1,12 @@
+.login{
+    width: 100%;
+}
+
+.login-background{
+    background-size: cover;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
