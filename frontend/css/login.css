@@ -2,6 +2,7 @@
     width: 100%;
 }
 
+
 .login-background{
     background-size: cover;
     overflow: hidden;
@@ -10,3 +11,21 @@
     z-index: -1;
 }
 
+.logi-header{
+    height: 40px;
+}
+
+.nflogo{
+    height: 115px;
+}
+
+@media (min-width: 800px){
+    .login-main{
+        background-color: rgba(0,0,0,.75);
+        box-sizing: content-box;
+        color: whitesmoke;
+        margin: auto;
+        max-width: 460px;
+        padding: 50px;
+    }
+}
