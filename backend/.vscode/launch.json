@@ -10,7 +10,7 @@
             "request": "launch",
             "module": "uvicorn",
             "args": [
-                "auth.main:app",
+                "auth_api.main:app",
                 "--reload"
             ],
             "jinja": true,

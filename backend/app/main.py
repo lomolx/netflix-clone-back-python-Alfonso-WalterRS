@@ -1,10 +1,22 @@
 import datetime as dt
 from fastapi import Depends, FastAPI
 from typing import Annotated
-#from app.auth.auth import get_current_user
-from auth.auth import get_current_user
+from app.auth.auth import get_current_user
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+origins = [
+    "http://127.0.0.1:5500/",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 MOVIES = [
     {

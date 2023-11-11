@@ -6,7 +6,7 @@ from typing import Annotated
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="http://localhost:8000/token/")
 
-with open("auth/key.pub", "rb") as pubkey_file:
+with open("app/auth/key.pub", "rb") as pubkey_file:
     public_key = pubkey_file.read()
     pubkey_file.close()
 

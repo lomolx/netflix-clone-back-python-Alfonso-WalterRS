@@ -1,6 +1,6 @@
 users = {
-    "poncho": {
-        "username": "poncho",
+    "pepito": {
+        "username": "pepito",
         "hashed_password": "$2y$10$OdV.HVDbckqxA.VpnYwMk.wccS4e4k06AmefrrJ8NW4pH8cb6HT5W",
     }
 }

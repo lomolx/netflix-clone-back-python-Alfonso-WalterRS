@@ -8,18 +8,17 @@ from jose.constants import Algorithms
 from passlib.context import CryptContext
 from fastapi.middleware.cors import CORSMiddleware
 
-#import auth_api.users_db as db | sin correccion
-import auth.users_db as db
+import auth_api.users_db as db
 
 app = FastAPI()
 
 origins = [
-    "http://localhost:9091",
+    "http://localhost:9091", "http://localhost:5500",
 ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -28,8 +27,8 @@ app.add_middleware(
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 ACCESS_TOKEN_EXPIRE_SECONDS = 60 * 30
 
-#with open("auth_api/key.pem", "r") as key_file:
-with open("auth/key.pem", "r") as key_file:
+
+with open("auth_api/key.pem", "r") as key_file:
     private_key = key_file.read()
     key_file.close()
 
